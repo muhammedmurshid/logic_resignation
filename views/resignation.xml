@@ -131,7 +131,7 @@
     </record>
     <menuitem name="Resignation" id="menu_resignation"
               action="logic_resignation_action"
-              web_icon="/logic_resignation/static/description/icon.png"
+              web_icon="logic_resignation/static/description/icon.png"
               sequence="9"/>
 
     <menuitem name="Resignation" id="menu_logic_resignation"
