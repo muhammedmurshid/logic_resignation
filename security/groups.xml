@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record model="ir.module.category" id="module_logic_resignation">
+        <field name="name">Resignation</field>
+        <field name="sequence">21</field>
+        <field name="visible" eval="0"/>
+    </record>
+    <record id="hr_resignation" model="res.groups">
+        <field name="name">HR Manager</field>
+        <field name="category_id" ref="module_logic_resignation"/>
+    </record>
+    <record id="employees_resignation" model="res.groups">
+        <field name="name">Employees</field>
+        <field name="category_id" ref="module_logic_resignation"/>
+    </record>
+</odoo>

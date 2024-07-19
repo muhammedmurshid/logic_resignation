@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data>
+        <record id="resignation_activity_for_head_approve" model="mail.activity.type">
+            <field name="name">Resignation Alert</field>
+            <field name="res_model_id" ref="logic_resignation.model_logic_resignation"/>
+
+
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+        <record id="resignation_rules" model="ir.rule">
+            <field name="name">Resignation Rules</field>
+            <field name="model_id" ref="logic_resignation.model_logic_resignation"/>
+            <field name="domain_force">['|', ('employee_id.parent_id.user_id.id', '=', user.id),('employee_id', '=', user.employee_id.id)]</field>
+            <field name="groups" eval="[(4, ref('logic_resignation.employees_resignation'))]"/>
+        </record>
+    </data>
+</odoo>
