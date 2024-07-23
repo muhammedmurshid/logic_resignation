@@ -33,7 +33,7 @@
                         <group string="Dates">
                             <field name="joining_date" attrs="{'readonly':[('state', '!=', 'draft')]}"/>
                             <field name="resign_confirm_date" attrs="{'readonly':[('state', '!=', 'draft')]}"/>
-                            <field name="expected_revealing_date" string="Last Day of Employee"/>
+                            <field name="expected_revealing_date" string="Last Working Day"/>
                             <field name="notice_period" attrs="{'readonly':[('state', '!=', 'draft')]}"/>
 
                         </group>

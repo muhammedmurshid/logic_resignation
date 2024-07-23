@@ -10,7 +10,7 @@ class LogicResignationForm(models.Model):
 
     employee_id = fields.Many2one('hr.employee', string="Employee", required=True, default=lambda self: self.env.user.employee_id, readonly=True)
     department_id = fields.Many2one('hr.department', string="Department", related='employee_id.department_id')
-    joining_date = fields.Date(string="Joining Date", required=True)
+    joining_date = fields.Date(string="Joining Date", required=True, related='employee_id.joining_date_cus')
     reason = fields.Text(string="Reason", required=True)
     notice_period = fields.Char(string="Notice Period")
     state = fields.Selection(
